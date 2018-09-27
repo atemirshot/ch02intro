@@ -5,7 +5,7 @@ Read [Introduction to OS](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf) and a
 
 1. **What is an operating system? What does it do?** Operating system is software body, which makes easy to runing programs. 
 2. **What is virtualization?** Transforming physical resourse into virtual form.
-3. **How does an OS provide access to its features?** your answer goes here 
+3. **How does an OS provide access to its features?** with virtualization and several hundred system calls available for applications.
 4. **What illusion does a virtualized CPU provide?** When several commands are executed at the same time, with help from hardware
     - **How does this affect the user experience?** their randomly run on user interface 
     - **How does this affect the developer experience?** your answer goes here 
@@ -19,13 +19,13 @@ one running program does not affect the space of other processes
 9. **What is a thread?** function that works in the same memory space as other functions, with
 more than one of them is active at the same time.
 10. **Why would we ever write a multi-threaded program?** your answer goes here
-11. **What is atomicity?** your answer goes here
-    - **Is a C/C++ statement atomic?** your answer goes here 
-    - **Is a Java statement atomic?** your answer goes here 
-    - **Is an assembler statement atomic?** your answer goes here 
+11. **What is atomicity?** yWhen all operations are performed at the same time
+    - **Is a C/C++ statement atomic?** yes
+    - **Is a Java statement atomic?** Not guaranteed
+    - **Is an assembler statement atomic?** Not guaranteed
 
-13. **What does persistence mean?** your answer goes here
+13. **What does persistence mean?** data storage in security
 
 14. **How does OS hard drive virtualization differ from CPU & memory virtualization?** your answer goes here 
 15. **How does running multiple programs at the same time increase CPU efficiency?** your answer goes here 
-16. **What is multiprogramming?** your answer goes here 
+16. **What is multiprogramming?** Multiprogramming is a rudimentary form of parallel processing in which several programs are run at the same time on a uniprocessor.
