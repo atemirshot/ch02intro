@@ -18,7 +18,7 @@ one running program does not affect the space of other processes
       - **Can this affect other programs?** 
 9. **What is a thread?** function that works in the same memory space as other functions, with
 more than one of them is active at the same time.
-10. **Why would we ever write a multi-threaded program?** use the programs and our time effectivly
+10. **Why would we ever write a multi-threaded program?** use the programs and our time effectivly. Programms run parallel
 11. **What is atomicity?** When all operations are performed at the same time
     - **Is a C/C++ statement atomic?** yes
     - **Is a Java statement atomic?** yes
@@ -26,6 +26,6 @@ more than one of them is active at the same time.
 
 13. **What does persistence mean?** data storage in security
 
-14. **How does OS hard drive virtualization differ from CPU & memory virtualization?** your answer goes here 
+14. **How does OS hard drive virtualization differ from CPU & memory virtualization?** can be stored device or separately. The memory is limited only by the hard drive 
 15. **How does running multiple programs at the same time increase CPU efficiency?** your answer goes here 
 16. **What is multiprogramming?** rudimentary form of parallel processing in which several programs are run at the same time. But in fact it is not parallel, only one program run at a time.
