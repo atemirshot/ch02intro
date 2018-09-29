@@ -14,8 +14,8 @@ Read [Introduction to OS](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf) and a
 6. **What is memory virtualization?** when the program supposedly has a different virtual memory address, but the physical memory is one
     - **Why would we want this?** A reference to memory within
 one running program does not affect the space of other processes
-8. **What happens if you write a C/C++ program that writes past the end of an array?**  your answer goes here
-      - **Can this affect other programs?** 
+8. **What happens if you write a C/C++ program that writes past the end of an array?**  Depends on where the buffer is allocated. On the stack or heap. Also depends on the computer architecture and the values that were written.
+      - **Can this affect other programs?** You cannot have any expetations, even with the same computer, because undefined behavior can mean anything
 9. **What is a thread?** function that works in the same memory space as other functions, with
 more than one of them is active at the same time.
 10. **Why would we ever write a multi-threaded program?** use the programs and our time effectivly. Programms run parallel
@@ -27,5 +27,5 @@ more than one of them is active at the same time.
 13. **What does persistence mean?** data storage in security
 
 14. **How does OS hard drive virtualization differ from CPU & memory virtualization?** can be stored device or separately. The memory is limited only by the hard drive 
-15. **How does running multiple programs at the same time increase CPU efficiency?** your answer goes here 
+15. **How does running multiple programs at the same time increase CPU efficiency?** It loads multiple processes in memory at the same time and executes one by one. One program is waiting and another is ready, so this improves CPU utilization 
 16. **What is multiprogramming?** rudimentary form of parallel processing in which several programs are run at the same time. But in fact it is not parallel, only one program run at a time.
